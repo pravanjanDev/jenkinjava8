@@ -33,7 +33,7 @@ dependencies {
 
 // [START gretty]
 gretty {
-    httpPort = 9990
+    httpPort = 8000
     contextPath = '/'
     servletContainer = 'jetty9'
 }
@@ -42,7 +42,7 @@ gretty {
 // [START model]
 appengine {
    run {      // local (dev_appserver) configuration (standard environments only)
-    port = 9990              // default
+    port = 8000              // default
   }
 
   deploy {   // deploy configuration
