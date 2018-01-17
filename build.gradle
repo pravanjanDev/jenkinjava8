@@ -58,7 +58,7 @@ commandLine "gcloud","config set account", "pravanjan.palai@gmail.com"
  }
 // [END model]
 
-group = 'com.mytestapp'   // Generated output GroupId
+group = 'com.mytestap.op'   // Generated output GroupId
 version = '1.0-SNAPSHOT'          // Version in generated output
 
 sourceCompatibility = 1.8
