@@ -31,6 +31,8 @@ dependencies {
 
 }
 
+
+
 // [START gretty]
 gretty {
     httpPort = 8899
@@ -45,7 +47,7 @@ appengine {
     port = 8890              // default
   }
 
-  deploy {   // deploy configuration
+ deploy {   // deploy configuration
     stopPreviousVersion = true  // default - stop the current version
     promote = true              // default - & make this the current version
   }
@@ -54,8 +56,12 @@ appengine {
 
 task setAccount (type:Exec){
 
-commandLine "gcloud","config set account", "pravanjan.palai@gmail.com"
- }
+commandLine "./gcloudcommand.sh"
+}
+
+appengineDeploy{
+    setAccount.execute();
+}
 // [END model]
 
 group = 'com.mytestap.op.io.u.ii.oo.uu'   // Generated output GroupId
