@@ -54,14 +54,8 @@ appengine {
 
 }
 
-task setAccount (type:Exec){
 
-commandLine "./gcloudcommand.sh"
-}
 
-appengineDeploy{
-    setAccount.execute();
-}
 // [END model]
 
 group = 'com.mytestap.op.io.u.ii.oo.uu'   // Generated output GroupId
